@@ -5,7 +5,7 @@ export ARCH=arm64
 KERNEL_SOURCE_DIR="$(pwd)"
 OUTPUT_DIR="$(pwd)/kout"
 CONFIG_FILE="$(pwd)/arch/arm64/configs/zeroflte_02_defconfig"
-CROSS_COMPILE="/home/chanz22/tc/gcc-linaro-4.9.4/bin/aarch64-elf-" 
+CROSS_COMPILE="/home/chanz22/tc/gcc-linaro-6.4.1/bin/aarch64-linux-gnu-" 
 JOBS=$(nproc)
 
 if [ ! -d "$KERNEL_SOURCE_DIR" ]; then
